@@ -87,7 +87,7 @@ SELECT
   `Funcionario`.*
 FROM `Funcionario`
 INNER JOIN `Departamento` AS `Dept` ON ( `Dept`.`CodDepartamento` = `Funcionario`.`CodDepartamento` )
-WHERE `Departamento`.`Descricao` = 'Comercial';
+WHERE `Dept`.`Descricao` = 'Comercial';
 
 -- Algebra
 -- π Funcionario.* (
@@ -104,7 +104,7 @@ WHERE `Departamento`.`Descricao` = 'Comercial';
 SELECT `Equipamento`.*
 FROM `Equipamento`
 JOIN `TipoEquipamento` USING (`CodTipoEquipamento`)
-WHERE `TipoEquipamento`.`Descricao` = 'Computador'
+WHERE `TipoEquipamento`.`Descricao` = 'Computador';
 
 -- Algebra
 -- π Equipamento.* (
@@ -119,7 +119,7 @@ WHERE `TipoEquipamento`.`Descricao` = 'Computador'
 
 SELECT `Funcionario`.*
 FROM `Avaria`
-JOIN `Funcionario` USING (`CodFuncionario`)
+JOIN `Funcionario` USING (`CodFuncionario`);
 
 -- Algebra
 -- π Funcionario.* (
