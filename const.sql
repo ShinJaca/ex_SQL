@@ -74,3 +74,28 @@ UPDATE `Funcionario` SET
       WHERE `Descricao` = 'Informática'
   )
 WHERE `Nome` LIKE 'Ricardo%';
+
+-- ex 15
+
+SELECT *
+  FROM Funcionario;
+
+-- ex 16
+-- SQL
+
+SELECT
+  `Funcionario`.*
+FROM `Funcionario`
+INNER JOIN `Departamento` AS `Dept` ON ( `Dept`.`CodDepartamento` = `Funcionario`.`CodDepartamento` )
+WHERE `Departamento`.`Descricao` = 'Comercial';
+
+-- Algebra
+-- π Funcionario.* (
+--   σ Departamento.Descricao = 'Comercial'(
+--     Departamento |x|
+--       Departamento.CodDepartamento = Funcionario.CodDepartamento
+--     Funcionario
+--   )
+-- )
+
+
