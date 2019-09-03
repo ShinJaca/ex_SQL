@@ -55,8 +55,8 @@ Exercícios de manipulação de dados
  14 | ok
  15 | ok
  16 | ok
- 17 | Jaca
- 18 | Jaca
+ 17 | ok
+ 18 | ok
 
 ## Parte 2
 

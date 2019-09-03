@@ -98,4 +98,31 @@ WHERE `Departamento`.`Descricao` = 'Comercial';
 --   )
 -- )
 
+-- ex 17
+-- SQL
 
+SELECT `Equipamento`.*
+FROM `Equipamento`
+JOIN `TipoEquipamento` USING (`CodTipoEquipamento`)
+WHERE `TipoEquipamento`.`Descricao` = 'Computador'
+
+-- Algebra
+-- π Equipamento.* (
+--   σ TipoEquipamento.Descricao = 'Computador'(
+--     Equipamento |x| Equipamento.CodTipoEquipamento = TipoEquipamento.CodTipoEquipamento
+--     TipoEquipamento
+--   )
+-- )
+
+-- ex 18
+-- SQL
+
+SELECT `Funcionario`.*
+FROM `Avaria`
+JOIN `Funcionario` USING (`CodFuncionario`)
+
+-- Algebra
+-- π Funcionario.* (
+--   Avaria |x| Avaria.CodFuncionario = Funcionario.CodFuncionario
+--   Funcionario
+-- )
