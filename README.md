@@ -46,7 +46,7 @@ Exercícios de manipulação de dados
 + Usando a função de data pesquisada acima, mostre, por ano, a quantidade de equipamentos adquiridos.
 + Mostre, pela descrição do tipo de equipamento, a quantidade de equipamentos.
 + Mostre, por ano e pela descrição do tipo de equipamento (juntando os dois comandos anteriores), a quantidade de equipamentos adquiridos.
-9. Selecione o nome dos funcionários que recebem igual ao maior salário.
+9. ~~Selecione o nome dos funcionários que recebem igual ao maior salário.~~
 10. Usando o IN, faça a seleção das avarias acontecidas nos equipamentos do tipo "Computador".
 11. Mostre os funcionários que não estão relacionados a Intervenções (usando EXISTS)
 12. Mostre as avarias que possuíram intervenções (primeiro usando EXISTS, depois usando IN e terceiro, usando JOIN) (Álgebra com Junção).
