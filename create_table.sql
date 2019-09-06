@@ -1,8 +1,8 @@
 -- ATIVIDADE BANCO DE DADOS
 -- QUESTÃO 1
 
--- CREATE DATABASE `av_db`;
-USE `ex_db`;
+/* -- CREATE DATABASE `av_db`; */
+USE `atividade`;
 /*FIXME consertar para av_db*/
 
 -- [TABLE] Departamento
