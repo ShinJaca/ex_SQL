@@ -45,7 +45,9 @@ SELECT
 
 -- QUESTÃO 7
 
-SELECT YEAR(data_inc) As Ano;
+SELECT YEAR(Intervencao.Data) As Ano
+  FROM Intervencao
+;
 
 -- QUESTÃO 8
   -- QUESTÃO 8.1
