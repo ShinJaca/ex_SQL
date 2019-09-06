@@ -1,9 +1,9 @@
 -- Definição DDL
 
--- ex 3 
+-- QUESTÃO 3 
 ALTER TABLE `Funcionario` MODIFY `Nome` VARCHAR(255) NOT NULL;
 
--- ex 4
+-- QUESTÃO 4
 ALTER TABLE `Avaria`
 DROP FOREIGN KEY `fk_Avaria_Equipamento`;
 
@@ -12,43 +12,44 @@ ADD CONSTRAINT `fk_Avaria_Equipamento`
   FOREIGN KEY (`Etiqueta`)
   REFERENCES `Equipamento` (`Etiqueta`);
 
--- ex 5, 6
+-- QUESTÃO 5, 6
 -- Adicionar um ENUM com valores F ou f mapeam para a mesma posição
+-- Basta colocar o M (maiúsculo) ou o F (maiúsculo), que o resultado sera o mesmo (Não é Case Sensitive)
 ALTER TABLE `Funcionario` ADD COLUMN `Sexo` ENUM('F', 'M');
 
--- ex 7
+-- QUESTÃO 7
 DROP TABLE `Departamento` RESTRICT;
 
--- ex 9
+-- QUESTÃO 9
 CREATE TABLE `Funcionario_S` AS
 SELECT *
-FROM `Funcionario`
-;
+FROM `Funcionario`;
+
 CREATE TABLE `Avaria_S` AS
 SELECT *
-FROM `Avaria`
-;
+FROM `Avaria`;
+
 CREATE TABLE `Departamento_S` AS
 SELECT *
-FROM `Departamento`
-;
+FROM `Departamento`;
+
 CREATE TABLE `Equipamento_S` AS
 SELECT *
-FROM `Equipamento`
-;
+FROM `Equipamento`;
+
 CREATE TABLE `Intervencao_S` AS
 SELECT *
-FROM `Intervencao`
-;
+FROM `Intervencao`;
+
 CREATE TABLE `TipoEquipamento_S` AS
 SELECT *
-FROM `TipoEquipamento`
-;
+FROM `TipoEquipamento`;
 
--- ex 10
+
+-- QUESTÃO 10
 DELETE FROM `Funcionario`;
 
--- ex 11 
+-- QUESTÃO 11 
 DELETE FROM `Equipamento` WHERE `CodDepartamento` = (
       SELECT
         `CodDepartamento`
@@ -56,16 +57,16 @@ DELETE FROM `Equipamento` WHERE `CodDepartamento` = (
       WHERE `Descricao` = 'Informática'
   );
 
--- ex 12
+-- QUESTÃO 12
 UPDATE `Equipamento` SET
   `Marca` = 'Samsung';
 
--- ex 13 
+-- QUESTÃO 13 
 UPDATE `Funcionario` SET
   `CodDepartamento` = 101
 WHERE `Nome` LIKE 'Ricardo%';
 
--- ex 14
+-- QUESTÃO 14
 UPDATE `Funcionario` SET
   `CodDepartamento` = (
       SELECT
@@ -75,12 +76,12 @@ UPDATE `Funcionario` SET
   )
 WHERE `Nome` LIKE 'Ricardo%';
 
--- ex 15
+-- QUESTÃO 15
 
 SELECT *
   FROM Funcionario;
 
--- ex 16
+-- QUESTÃO 16
 -- SQL
 
 SELECT
@@ -98,7 +99,7 @@ WHERE `Dept`.`Descricao` = 'Comercial';
 --   )
 -- )
 
--- ex 17
+-- QUESTÃO 17
 -- SQL
 
 SELECT `Equipamento`.*
@@ -114,10 +115,10 @@ WHERE `TipoEquipamento`.`Descricao` = 'Computador';
 --   )
 -- )
 
--- ex 18
+-- QUESTÃO 18
 -- SQL
 
-SELECT `Funcionario`.*
+SELECT `Funcionario`.`Nome`
 FROM `Avaria`
 JOIN `Funcionario` USING (`CodFuncionario`);
 
@@ -126,3 +127,4 @@ JOIN `Funcionario` USING (`CodFuncionario`);
 --   Avaria |x| Avaria.CodFuncionario = Funcionario.CodFuncionario
 --   Funcionario
 -- )
+

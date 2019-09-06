@@ -1,12 +1,16 @@
+-- ATIVIDADE BANCO DE DADOS
+-- QUESTÃO 1
 
-CREATE DATABASE `av_db`;
-USE `av_db`;
+-- CREATE DATABASE `av_db`;
+USE `ex_db`;
+/*FIXME consertar para av_db*/
 
 -- [TABLE] Departamento
 CREATE TABLE IF NOT EXISTS `Departamento` (
   `CodDepartamento` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `Descricao` VARCHAR(255),
   PRIMARY KEY `pk_CodDepartamento`(`CodDepartamento`)
+  
 ) ENGINE = InnoDB;
 
 -- [TABLE] Funcionário

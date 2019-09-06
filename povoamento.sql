@@ -1,16 +1,20 @@
 -- Povoamento
 
+-- QUESTÃO 8
+
 INSERT INTO `Departamento`(`CodDepartamento`, `Descricao`) VALUES
 (101, 'Contabilidade')
 ;
+
 INSERT INTO `Departamento`(`Descricao`) VALUES
 ('Comercial'),
 ('Recursos Humanos'),
-('Informática')
+('Informática'),
+('Financeiro')
 ;
 
-
-INSERT INTO `Funcionario`(`Nome`, `CodDepartamento`) VALUES
+-- No campo sexo, foi posto um número, porque o mySql não possui Domínio, logo, foi feito com ENUM.
+INSERT INTO `Funcionario`(`Nome`, `CodDepartamento`,`Sexo`) VALUES
 ('Ana Souza', 101, 1),
 ('Paulo Mendes', 101, 2),
 ('Ricardo Freitas', 102, 2),
@@ -18,7 +22,9 @@ INSERT INTO `Funcionario`(`Nome`, `CodDepartamento`) VALUES
 ('Catarina Rios', 102, 1),
 ('Leonor Santos', 103, 1),
 ('Alan Passos', 104, 2),
-('José Maria', 104, 2)
+('José Maria', 104, 2),
+('Jaca',105,2),
+('Igor',105,2)
 ;
 
 INSERT INTO `TipoEquipamento`(`Descricao`) VALUES
@@ -41,9 +47,16 @@ INSERT INTO `Equipamento`(`Etiqueta`, `Marca`, `Descricao`, `dataAquisicao`, `Co
 
 INSERT INTO `Avaria`(`Descricao`, `Data`, `Etiqueta`, `CodFuncionario` ) VALUES
 ('O computador não dá partida', '2011-03-03', 'PC001CTB', 2),
-('Trocar tonner', '2012-05-28', 'IMP001INF', 7)
+('Trocar tonner', '2012-05-28', 'IMP001INF', 7),
+('O computador está esquentando', '2012-05-29', 'PC002CTB', 6),
+('O computador pegou fogo', '2012-05-29', 'PC002INF', 1),
+('O computador está com o vídeo estrago', '2012-05-29', 'PC001INF', 10)
 ;
 
 INSERT INTO `Intervencao`(`Descricao`, `Data`, `CodAvaria`, `CodFuncionario`) VALUES
-('Trocada a placa mãe', '2011-03-05', 1, 8)
+('Trocada a placa mãe', '2011-03-05', 1, 8),
+('Trocada a pasta termica', '2012-05-30', 3, 10),
+('Trocado o cooler', '2012-05-30', 3, 6),
+('Trocado o processador', '2011-03-05', 1, 8),
+('Trocado a placa de vídeo', '2011-03-05', 1, 3)
 ;

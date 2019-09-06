@@ -1,4 +1,4 @@
-
+-- QUESTÃO 2
 -- [FOREIGN KEYS]
 
 ALTER TABLE `Funcionario`
