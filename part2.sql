@@ -67,3 +67,43 @@ SELECT Funcionario.Nome AS Nome
       (SELECT MAX(salario) FROM Funcionario)=Funcionario.salario
     )
 ;
+
+SELECT * FROM Avaria 
+
+-- QUESTÃO 10
+SELECT * FROM Avaria 
+  JOIN Equipamento USING(Etiqueta)
+  WHERE (CodTipoEquipamento ) IN (
+    SELECT TipoEquipamento.CodTipoEquipamento FROM TipoEquipamento 
+    WHERE Descricao = "Computador"
+  );
+
+-- QUESTÃO 11
+
+SELECT * FROM Funcionario
+  WHERE NOT EXISTS (
+    SELECT * FROM Intervencao 
+      WHERE (Funcionario.CodFuncionario = Intervencao.CodFuncionario)
+  );
+
+SELECT * FROM Intervencao
+
+-- QUESTÃO 12
+SELECT * FROM Avaria
+  WHERE EXISTS (
+    SELECT * FROM Intervencao
+    WHERE (Avaria.CodAvaria = Intervencao.CodAvaria)
+  );
+
+SELECT * FROM Avaria 
+  WHERE (CodAvaria) IN (
+    SELECT CodAvaria FROM Intervencao
+  );
+
+SELECT Avaria.CodAvaria FROM Avaria 
+  JOIN Intervencao ON(
+    Avaria.CodAvaria = Intervencao.CodAvaria
+  )
+  GROUP BY(CodAvaria)
+;
+  
