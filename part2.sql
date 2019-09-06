@@ -68,7 +68,6 @@ SELECT Funcionario.Nome AS Nome
     )
 ;
 
-SELECT * FROM Avaria 
 
 -- QUESTÃO 10
 SELECT * FROM Avaria 
@@ -86,7 +85,7 @@ SELECT * FROM Funcionario
       WHERE (Funcionario.CodFuncionario = Intervencao.CodFuncionario)
   );
 
-SELECT * FROM Intervencao
+
 
 -- QUESTÃO 12
 SELECT * FROM Avaria
@@ -94,13 +93,11 @@ SELECT * FROM Avaria
     SELECT * FROM Intervencao
     WHERE (Avaria.CodAvaria = Intervencao.CodAvaria)
   );
-
 SELECT * FROM Avaria 
   WHERE (CodAvaria) IN (
     SELECT CodAvaria FROM Intervencao
   );
-
-SELECT Avaria.CodAvaria FROM Avaria 
+SELECT Avaria.* FROM Avaria 
   JOIN Intervencao ON(
     Avaria.CodAvaria = Intervencao.CodAvaria
   )
