@@ -61,9 +61,7 @@ SELECT YEAR(data_inc) As Ano;
 
 SELECT Funcionario.Nome AS Nome
   FROM Funcionario
-  
     WHERE(
       (SELECT MAX(salario) FROM Funcionario)=Funcionario.salario
     )
-  
 ;
