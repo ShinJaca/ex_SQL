@@ -47,9 +47,9 @@ Exercícios de manipulação de dados
 + Mostre, pela descrição do tipo de equipamento, a quantidade de equipamentos.
 + Mostre, por ano e pela descrição do tipo de equipamento (juntando os dois comandos anteriores), a quantidade de equipamentos adquiridos.
 9. ~~Selecione o nome dos funcionários que recebem igual ao maior salário.~~
-10. Usando o IN, faça a seleção das avarias acontecidas nos equipamentos do tipo "Computador".
-11. Mostre os funcionários que não estão relacionados a Intervenções (usando EXISTS)
-12. Mostre as avarias que possuíram intervenções (primeiro usando EXISTS, depois usando IN e terceiro, usando JOIN) (Álgebra com Junção).
+10. ~~Usando o IN, faça a seleção das avarias acontecidas nos equipamentos do tipo "Computador".~~
+11. ~~Mostre os funcionários que não estão relacionados a Intervenções (usando EXISTS)~~
+12. ~~Mostre as avarias que possuíram intervenções (primeiro usando EXISTS, depois usando IN e terceiro, usando JOIN) (Álgebra com Junção).~~
 13. Mostre a soma dos salários, agrupando por descrição de departamento.
 14. Mostre a média salarial de cada departamento por ordem decrescente.
 15. Mostre os nomes dos empregados que recebem salario maior que todos os salários do departamento Informática.
@@ -60,18 +60,18 @@ Exercícios de manipulação de dados
 
  Ex | Status
 --- | ---
-  1 | undefined
-  2 | undefined
-  3 | undefined
-  4 | undefined
-  5 | undefined
+  1 | OK
+  2 | OK
+  3 | OK
+  4 | OK
+  5 | OK
   6 | undefined
-  7 | undefined
+  7 | OK
   8 | undefined
-  9 | undefined
- 10 | undefined
- 11 | undefined
- 12 | undefined
+  9 | OK
+ 10 | OK
+ 11 | OK
+ 12 | OK
  13 | undefined
  14 | undefined
  15 | undefined
