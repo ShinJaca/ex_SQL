@@ -9,54 +9,29 @@ ___
 
 Exercícios de definição de dados e de banco
 
-1. Crie todas as tabelas com as respectivas chaves primárias;
-2. Adicione as chaves estrangeiras (ALTER TABLE);
-3. Altere a tabela Funcionário colocando a característica NOT NULL no atributo nome;
-4. Apague a CONSTRAINT foreign Key da tabela Avaria. Em seguida, adicione;
-5. Crie um domínio DOMSEXO que receba somente os valores ‘F’, ‘f’, ‘m’, ‘M’ para os sexos;
-6. Em seguida, adicione o atributo SEXO na tabela Funcionário, pertencente ao domínio criado anteriormente;
-7. Tente apagar a tabela Departamento com a opção RESTRICT (lembre-se de relacionar Empregado a algum departamento antes de tentar apagar).
-
-Ex | Status
---- | ---
-1 | ok
-2 | ok
-3 | ok
-4 | ok
-5 | ok
-6 | ok
-7 | ok
-
+1. ~~Crie todas as tabelas com as respectivas chaves primárias;~~
+2. ~~Adicione as chaves estrangeiras (ALTER TABLE);~~
+3. ~~Altere a tabela Funcionário colocando a característica NOT NULL no atributo nome;~~
+4. ~~Apague a CONSTRAINT foreign Key da tabela Avaria. Em seguida, adicione;~~
+5. ~~Crie um domínio DOMSEXO que receba somente os valores ‘F’, ‘f’, ‘m’, ‘M’ para os sexos;~~
+6. ~~Em seguida, adicione o atributo SEXO na tabela Funcionário, pertencente ao domínio criado anteriormente;~~
+7. ~~Tente apagar a tabela Departamento com a opção RESTRICT (lembre-se de relacionar Empregado a algum departamento antes de tentar apagar).~~
 
 ### Data Manipulation Language
 
 Exercícios de manipulação de dados
 
-8. Insira dados em todas as tabelas utilizando o Insert (insira pelo menos 5 tuplas em cada uma);
-9. Antes de fazer as manipulações abaixo, crie cópias das tabelas utilizando o Create juntamente com o Select;
-10. Apague todos os funcionários;
-11. Apague todos os equipamentos que pertencem ao Departamento ‘Informática’;
-12. Atualize todos os equipamentos para a marca ‘Samsung’;
-13. Todas as pessoas com nomes começados em ‘Ricardo’ devem pertencer ao departamento 101;
-14. Todas as pessoas com nomes começados em ‘Ricardo’ devem pertencer ao departamento ‘Informática’;
-15. Selecione todos os funcionários;
-16. Selecione todos os funcionários do departamento ‘Comercial’ (Álgebra);
-17. Selecione todos os equipamentos da categoria ‘Computador’ (Álgebra);
-18. Selecione o nome de todos os funcionários responsáveis pelo cadastro das avarias (Álgebra);
-
- Ex | Status
---- | ---
-  8 | ok
-  9 | ok
- 10 | ok
- 11 | ok
- 12 | ok
- 13 | ok
- 14 | ok
- 15 | ok
- 16 | ok
- 17 | ok
- 18 | ok
+ 8. ~~Insira dados em todas as tabelas utilizando o Insert (insira pelo menos 5 tuplas em cada uma);~~
+ 9. ~~Antes de fazer as manipulações abaixo, crie cópias das tabelas utilizando o Create juntamente com o Select;~~
+10. ~~Apague todos os funcionários;~~
+11. ~~Apague todos os equipamentos que pertencem ao Departamento ‘Informática’;~~
+12. ~~Atualize todos os equipamentos para a marca ‘Samsung’;~~
+13. ~~Todas as pessoas com nomes começados em ‘Ricardo’ devem pertencer ao departamento 101;~~
+14. ~~Todas as pessoas com nomes começados em ‘Ricardo’ devem pertencer ao departamento ‘Informática’;~~
+15. ~~Selecione todos os funcionários;~~
+16. ~~Selecione todos os funcionários do departamento ‘Comercial’ (Álgebra);~~
+17. ~~Selecione todos os equipamentos da categoria ‘Computador’ (Álgebra);~~
+18. ~~Selecione o nome de todos os funcionários responsáveis pelo cadastro das avarias (Álgebra);~~
 
 ## Parte 2
 
