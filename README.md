@@ -42,10 +42,10 @@ Exercícios de manipulação de dados
 5. ~~Mostre o nome de cada funcionário, seguido da quantidade de avarias.~~
 6. ~~Mostre as intervenções, seguidas dos nomes dos funcionários, descrição e data das avarias (Álgebra).(JACA)~~
 7. ~~Pesquise uma função de data que isola o ano de uma data.~~
-8. Usando agrupamento, faça:
-+ Usando a função de data pesquisada acima, mostre, por ano, a quantidade de equipamentos adquiridos.
-+ Mostre, pela descrição do tipo de equipamento, a quantidade de equipamentos.
-+ Mostre, por ano e pela descrição do tipo de equipamento (juntando os dois comandos anteriores), a quantidade de equipamentos adquiridos.
+8. ~~Usando agrupamento, faça:~~
++ ~~Usando a função de data pesquisada acima, mostre, por ano, a quantidade de equipamentos adquiridos.~~
++ ~~Mostre, pela descrição do tipo de equipamento, a quantidade de equipamentos.~~
++ ~~Mostre, por ano e pela descrição do tipo de equipamento (juntando os dois comandos anteriores), a quantidade de equipamentos adquiridos.~~
 9. ~~Selecione o nome dos funcionários que recebem igual ao maior salário.~~
 10. ~~Usando o IN, faça a seleção das avarias acontecidas nos equipamentos do tipo "Computador".~~
 11. ~~Mostre os funcionários que não estão relacionados a Intervenções (usando EXISTS)~~
@@ -65,9 +65,9 @@ Exercícios de manipulação de dados
   3 | OK
   4 | OK
   5 | OK
-  6 | undefined
+  6 | OK
   7 | OK
-  8 | undefined
+  8 | OK
   9 | OK
  10 | OK
  11 | OK
