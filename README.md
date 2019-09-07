@@ -52,11 +52,11 @@ Exercícios de manipulação de dados
 12. ~~Mostre as avarias que possuíram intervenções (primeiro usando EXISTS, depois usando IN e terceiro, usando JOIN) (Álgebra com Junção).~~
 13. Mostre a soma dos salários, agrupando por descrição de departamento.
 14. Mostre a média salarial de cada departamento por ordem decrescente.
-15. Mostre os nomes dos empregados que recebem salario maior que todos os salários do departamento Informática.
-16. Faça um cross join entre Departamento e Funcionário.
-17. Faça um cross joint entre Departamento e Funcionário, fazendo a equivalência entre as chaves (primária e estrangeira).
-18. Cadastre algum funcionário sem departamento. Em seguida, exclua os funcionários do departamento 104 e faça um outer Join (left e right) entre departamento e funcionário.
-19. Traga o nome do funcionário e o nome do departamento a que pertence, usando o inner join (Álgebra).
+15. ~~Mostre os nomes dos empregados que recebem salario maior que todos os salários do departamento Informática.~~
+16. ~~Faça um cross join entre Departamento e Funcionário.~~
+17. ~~Faça um cross joint entre Departamento e Funcionário, fazendo a equivalência entre as chaves (primária e estrangeira).~~
+18. ~~Cadastre algum funcionário sem departamento. Em seguida, exclua os funcionários do departamento 104 e faça um outer Join (left e right) entre departamento e funcionário.~~
+19. ~~Traga o nome do funcionário e o nome do departamento a que pertence, usando o inner join (Álgebra).~~
 
  Ex | Status
 --- | ---
