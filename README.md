@@ -40,7 +40,7 @@ Exercícios de manipulação de dados
 3. ~~Mostre, em um mesmo select, o maior salário, o menor, a soma e a média salarial.~~
 4. ~~Acrescente mais 4 avarias (tuplas).~~
 5. ~~Mostre o nome de cada funcionário, seguido da quantidade de avarias.~~
-6. Mostre as intervenções, seguidas dos nomes dos funcionários, descrição e data das avarias (Álgebra).(JACA)
+6. ~~Mostre as intervenções, seguidas dos nomes dos funcionários, descrição e data das avarias (Álgebra).(JACA)~~
 7. ~~Pesquise uma função de data que isola o ano de uma data.~~
 8. Usando agrupamento, faça:
 + Usando a função de data pesquisada acima, mostre, por ano, a quantidade de equipamentos adquiridos.

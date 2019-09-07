@@ -55,3 +55,17 @@ SELECT
 --         Funcionario.CodDepartamento = Departamento.CodDepartamento
 --     Departamento
 -- )
+
+-- QUESTÃO 6
+
+SELECT
+    `I`.`Descricao` AS `Intervencao`, `F`.`Nome`, `A`.`Descricao`, `A`.`Data`
+  FROM `Intervencao` AS `I`
+  JOIN `Funcionario` AS `F` USING (CodFuncionario)
+  JOIN `Avaria` AS `A` USING (CodAvaria);
+
+-- π Intervencao.Descricao, Funcionario.Nome, Avaria.Descricao, Avaria.Data (
+--     Funcionario |x| Intervencao.CodFuncionario = Funcionario.CodFuncionario
+--     (Intervencao |x| Intervencao.CodAvaria = Avaria.CodAvaria
+--     Avaria)
+-- )
