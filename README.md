@@ -65,7 +65,7 @@ Exercícios de manipulação de dados
   3 | OK
   4 | OK
   5 | OK
-  6 | undefined
+  6 | OK
   7 | OK
   8 | undefined
   9 | OK
