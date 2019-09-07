@@ -50,4 +50,8 @@ SELECT
   FROM `Funcionario` AS `F`
   INNER JOIN `Departamento` AS `D` USING(`CodDepartamento`)
 
-π Funcionario.Nome, Departamento.Descricao ()
+-- π Funcionario.Nome, Departamento.Descricao (
+--     Funcionario |x| 
+--         Funcionario.CodDepartamento = Departamento.CodDepartamento
+--     Departamento
+-- )
