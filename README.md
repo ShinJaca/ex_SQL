@@ -50,8 +50,8 @@ Exercícios de manipulação de dados
 10. ~~Usando o IN, faça a seleção das avarias acontecidas nos equipamentos do tipo "Computador".~~
 11. ~~Mostre os funcionários que não estão relacionados a Intervenções (usando EXISTS)~~
 12. ~~Mostre as avarias que possuíram intervenções (primeiro usando EXISTS, depois usando IN e terceiro, usando JOIN) (Álgebra com Junção).~~
-13. Mostre a soma dos salários, agrupando por descrição de departamento.
-14. Mostre a média salarial de cada departamento por ordem decrescente.
+13. ~~Mostre a soma dos salários, agrupando por descrição de departamento.~~
+14. ~~Mostre a média salarial de cada departamento por ordem decrescente.~~
 15. Mostre os nomes dos empregados que recebem salario maior que todos os salários do departamento Informática.
 16. Faça um cross join entre Departamento e Funcionário.
 17. Faça um cross joint entre Departamento e Funcionário, fazendo a equivalência entre as chaves (primária e estrangeira).
@@ -77,5 +77,5 @@ Exercícios de manipulação de dados
  15 | OK
  16 | OK
  17 | OK
- 18 | undefined
- 19 | undefined
+ 18 | OK
+ 19 | OK

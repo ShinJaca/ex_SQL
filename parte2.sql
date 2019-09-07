@@ -36,5 +36,19 @@ WHERE CodDepartamento = 104
 
 SELECT *
 FROM Funcionario
-LEFT JOIN Departamento USING CodDepartamento;
+LEFT JOIN Departamento USING (CodDepartamento);
+
+SELECT *
+FROM Funcionario
+RIGHT JOIN Departamento USING (CodDepartamento);
+
+
+-- QUESTÃO 19
+
+SELECT
+    `F`.`Nome`, `D`.`Descricao`
+  FROM `Funcionario` AS `F`
+  INNER JOIN `Departamento` AS `D` USING(`CodDepartamento`)
+
+
 
