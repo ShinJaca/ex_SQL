@@ -85,8 +85,6 @@ SELECT * FROM Funcionario
       WHERE (Funcionario.CodFuncionario = Intervencao.CodFuncionario)
   );
 
-
-
 -- QUESTÃO 12
 SELECT * FROM Avaria
   WHERE EXISTS (
@@ -104,3 +102,15 @@ SELECT Avaria.* FROM Avaria
   GROUP BY(CodAvaria)
 ;
   
+-- QUESTÃO 13
+
+SELECT SUM(salario),Departamento.Descricao FROM Funcionario
+  JOIN Departamento USING(CodDepartamento)
+  GROUP BY(Departamento.Descricao);
+
+-- QUESTÃO 14
+
+SELECT AVG(salario) AS media,Departamento.Descricao FROM Funcionario
+  JOIN Departamento USING(CodDepartamento)
+  GROUP BY(Departamento.Descricao)
+  ORDER BY(media) DESC;
