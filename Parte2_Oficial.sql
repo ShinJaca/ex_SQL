@@ -42,12 +42,14 @@ SELECT
 
 -- QUESTÃO 6
 
+-- SQL
 SELECT
     `I`.`Descricao` AS `Intervencao`, `F`.`Nome`, `A`.`Descricao`, `A`.`Data`
   FROM `Intervencao` AS `I`
   JOIN `Funcionario` AS `F` USING (CodFuncionario)
   JOIN `Avaria` AS `A` USING (CodAvaria);
 
+-- Algebra
 -- π Intervencao.Descricao, Funcionario.Nome, Avaria.Descricao, Avaria.Data (
 --     Funcionario |x| Intervencao.CodFuncionario = Funcionario.CodFuncionario
 --     (Intervencao |x| Intervencao.CodAvaria = Avaria.CodAvaria
@@ -56,19 +58,35 @@ SELECT
 
 -- QUESTÃO 7
 
-SELECT YEAR(Intervencao.Data) As Ano
+SELECT YEAR(Intervencao.Data) AS Ano
   FROM Intervencao
 ;
 
 -- QUESTÃO 8
+
   -- QUESTÃO 8.1
 
-
+    SELECT YEAR(Equipamento.dataAquisicao) AS `Data_Aquisicao`,COUNT(*) AS `Quantidade`
+      FROM Equipamento
+      GROUP BY(`Data_Aquisicao`);
 
   -- QUESTÃO 8.2
 
+    SELECT Equipamento.Descricao AS `Descricao`,COUNT(*) AS `Quantidade`
+      FROM Equipamento
+      GROUP BY(`Descricao`);
 
   -- QUESTÃO 8.3
+
+    SELECT YEAR(dataAquisicao) AS Ano,COUNT(*) AS `Quantidade`,TipoEquipamento.Descricao
+      FROM Equipamento
+      JOIN TipoEquipamento ON (
+        TipoEquipamento.CodTipoEquipamento = Equipamento.CodTipoEquipamento
+      )
+      GROUP BY Ano,TipoEquipamento.Descricao
+      ;
+
+
 
 -- QUESTÃO 9
 
@@ -97,6 +115,8 @@ SELECT * FROM Funcionario
   );
 
 -- QUESTÃO 12
+
+-- SQL
 SELECT * FROM Avaria
   WHERE EXISTS (
     SELECT * FROM Intervencao
@@ -112,6 +132,16 @@ SELECT Avaria.* FROM Avaria
   )
   GROUP BY(CodAvaria)
 ;
+
+-- Algebra
+-- π Intervencao.CodIntervencao, Intervencao.Descricao,
+-- Intervencao.Data, Intervencao.CodFuncionario,
+-- Avaria.CodAvaria, Avaria.Descricao,
+-- Avaria.Data, (
+--  Avaria |x| 
+--    Avaria.CodAvaria = Intervencao.CodAvaria
+--  Intervencao
+-- )
   
 -- QUESTÃO 13
 
@@ -169,14 +199,15 @@ SELECT *
 FROM Funcionario
 RIGHT JOIN Departamento USING (CodDepartamento);
 
-
 -- QUESTÃO 19
 
+-- SQL
 SELECT
     `F`.`Nome`, `D`.`Descricao`
   FROM `Funcionario` AS `F`
   INNER JOIN `Departamento` AS `D` USING(`CodDepartamento`)
 
+-- Algebra
 -- π Funcionario.Nome, Departamento.Descricao (
 --     Funcionario |x| 
 --         Funcionario.CodDepartamento = Departamento.CodDepartamento
