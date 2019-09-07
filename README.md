@@ -77,5 +77,5 @@ Exercícios de manipulação de dados
  15 | OK
  16 | OK
  17 | OK
- 18 | undefined
- 19 | undefined
+ 18 | OK
+ 19 | OK
